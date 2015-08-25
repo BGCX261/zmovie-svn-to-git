@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <com.itconnect.inc.zmovie.ui.widget.BlockTouchFrameLayout
+        android:id="@+id/popcorn_header"
+        android:layout_width="match_parent"
+        android:layout_height="43dp" />
+
+    <com.itconnect.inc.zmovie.ui.widget.BlockTouchFrameLayout
+        android:id="@+id/popcorn_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/popcorn_header" >
+
+    </com.itconnect.inc.zmovie.ui.widget.BlockTouchFrameLayout>
+
+    <View
+        android:id="@+id/popcorn_header_line"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/popcorn_header"
+        android:layout_marginTop="-3dp"
+        android:background="@drawable/popcorn_header_line" />
+
+    <FrameLayout
+        android:id="@+id/popcorn_splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:visibility="gone" >
+    </FrameLayout>
+
+
+
+</RelativeLayout>
